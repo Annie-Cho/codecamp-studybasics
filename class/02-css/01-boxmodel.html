@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: content-box;
+        }
+
+        div {
+            width: 80px;
+            height: 80px;
+            border: 2px solid red;
+            /*padding: 30px; */
+        }
+/*
+        #bb {
+            box-sizing: border-box;
+        }
+
+        #cb {
+            box-sizing: content-box;
+        }
+*/
+        .pb {
+            width: 500px;
+            height: 320px;
+            border: 2px solid blue;
+            display: flex;              /*기본값 = row. 반대값 = column*/
+            flex-direction: column;
+            align-items: center;        /*flex-direction이 column일 때, 가로 가운데 정렬*/
+            justify-content: center;    /*세로 가운데 정렬*/
+
+            /* flex-direction이 row일 경우
+            justify-content: center;    /*가로 가운데 정렬
+            align-items: center;
+            */
+        }
+    </style>
+</head>
+<body>
+
+    <div id="bb">박스 1</div>
+    <div class="pb">
+        <div>박스 2</div>           <!--기본값은 contentbox로 되어있어서 박스3과 동일한 결과가 나옴-->
+        <div id="cb">박스 3</div>
+        <div>박스 4</div>
+    </div>
+    <div>박스 5</div>
+</body>
+</html>

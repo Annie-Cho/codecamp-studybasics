@@ -1,0 +1,9 @@
+* {
+    background-color: beige;
+}
+
+.inputBox {
+    border: 1px solid red;
+    background-color: #ffb2e4;
+    /*background-color: rgb()*/
+}

@@ -1,0 +1,130 @@
+/*반드시!!!! 어떤 작업을 하던 가장 먼저 아래를 설정해줘야 함*/
+* {
+    box-sizing: border-box;
+    margin: 0px;            /*기본 여백을 없애줌*/
+}
+
+.background {           /*.은 클래스라는 뜻*/
+    width: 1024px;
+    height: 600px;
+ /*   background-color: aquamarine;*/
+    background-image: url("../images/background.png");
+    padding: 20px 0px 0px 20px;  /*top, right, bottom, left*/   /*안쪽 여백*/
+}
+
+.outerbox {
+    width: 808px;
+    height: 544px;
+ /*   background-color: blueviolet;*/
+    background-image: url("../images/outerbox.png");
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 32px 0px 0px 32px;
+}
+
+/*왼쪽 영역*/
+.wrapper__left {
+    width: 208px;
+    height: 472px;
+    margin-left: 3px;           /*left를 기준으로 마진을 주어 서로 띄워지게 함*/
+    margin-right: 7px;
+    display: flex;
+    flex-direction: column;     /* wrapper left안에 박스들이 수직배치 되어있어서 column으로 지정*/
+}
+
+.wrapper__left__header {
+    width: 100%;        /* 00% : 부모박스의 세로 혹은 가로 사이즈의 몇 퍼센트를 가져가겠다(상대적 단위)*/
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.today {
+    font-size: 9px;
+}
+
+.wrapper__left__body {
+    width: 100%;
+    height: 100%;
+    border: 1px solid gray;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 20px 30px 0px 30px;
+}
+
+.left__body__header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.left__body__header__gray {
+    width: 148px;
+    height: 133px;
+    background-color: gray;
+}
+
+.left__body__header__line {
+    border-top: 1px dotted black;
+    margin: 12px 0px;       /* 첫 번째 : top, bottom, 두 번째 : left, right*/
+}
+
+.left__body__profile {
+    width: 148px;
+    display: flex;
+    flex-direction: column;
+}
+
+.left__body__profile__line {
+    width: 100%;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    font-size: 9px;
+}
+
+.profiletext {
+    margin-left: 8px;
+    color: #999999;
+}
+
+.left__body__footer {
+    width: 148px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin: 30px 0px;
+}
+
+.feeling {
+    font-size: 11px;
+    color: #999999;
+}
+
+.left__body__footer__select {
+    width: 148px;
+    margin-top: 5px;
+}
+
+.selectfeeling {
+    width: 100%;
+    height: 18px;
+    font-size: 15px;
+    color: #999999;
+}
+
+/*오른쪽 영역*/
+.wrapper__right {
+    width: 524px;
+    height: 472px;
+    background-color: blueviolet;
+}

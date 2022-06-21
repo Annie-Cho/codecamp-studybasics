@@ -1,0 +1,39 @@
+<!DOCTYPE html>         <!--이 줄이 있다면 ver.5 이고 없으면 이전 버전이다-->
+<html lang="ko">
+<head>
+    <title>회원가입</title>
+    <!--
+    <style>
+        #name {
+            background-color: aquamarine;
+        }
+    </style>
+    -->
+    <link href="./02-signup.css" rel="stylesheet">
+</head>
+<body>
+    <h2>회원가입</h2>
+ <!--   <input type="text" placeholder="이메일을 입력해 주세요." style="border: 1px solid red;"><br><br>-->
+    <input type="text" placeholder="이메일을 입력해 주세요." class="inputBox"><br><br>
+    <input type="text" placeholder="이름을 입력해 주세요." id="name" class="inputBox"><br><br>
+    <input type="password" placeholder="비밀번호를 입력해 주세요." class="inputBox"><br><br>
+    <input type="password" placeholder="비밀번호를 다시 입력해 주세요." class="inputBox"><br><br>
+    <select>
+        <option disabled selected>지역을 선택하세요.</option>          <!--disabled selected와 같이 ed붙은 속성들은 =true 지정안해줘도 사용 가능-->
+        <option>서울</option>
+        <option>경기</option>
+        <option>인천</option>
+    </select>
+    <br><br>
+    <input type="radio" name="gender"> 여성             <!--그룹을 지어줘야(gender) radio버튼 활성화 가능-->
+    <input type="radio" name="gender"> 남성
+    <br><br>
+    <input type="checkbox"> 이용약관 개인정보 수집에 동의합니다.
+    <hr>
+    <button>가입하기</button>
+    <!--
+        <input type="button" value="가입하기"> 이전에는 이런 식으로 버튼을 만들었었음. 이 버튼의 경우 꾸며주기가 불가능하다. 예를 들어 아래와 같이 heading1을 사용하지 못한다.
+        <button><h1>가입하기</h1></button>
+    -->
+</body>
+</html>
