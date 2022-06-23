@@ -1,0 +1,170 @@
+/*반드시!!!! 어떤 작업을 하던 가장 먼저 아래를 설정해줘야 함*/
+* {
+    box-sizing: border-box;
+    margin: 0px;            /*기본 여백을 없애줌*/
+}
+
+.background {           /*.은 클래스라는 뜻*/
+    width: 1024px;
+    height: 600px;
+ /*   background-color: aquamarine;*/
+    background-image: url("../images/background.png");
+    padding: 20px 0px 0px 20px;  /*top, right, bottom, left*/   /*안쪽 여백*/
+}
+
+.outerbox {
+    width: 808px;
+    height: 544px;
+ /*   background-color: blueviolet;*/
+    background-image: url("../images/outerbox.png");
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 32px 0px 0px 32px;
+}
+
+/*왼쪽 영역*/
+.wrapper__left {
+    width: 208px;
+    height: 472px;
+    margin-left: 3px;           /*left를 기준으로 마진을 주어 서로 띄워지게 함*/
+    margin-right: 7px;
+    display: flex;
+    flex-direction: column;     /* wrapper left안에 박스들이 수직배치 되어있어서 column으로 지정*/
+}
+
+.wrapper__left__header {
+    width: 100%;        /* 00% : 부모박스의 세로 혹은 가로 사이즈의 몇 퍼센트를 가져가겠다(상대적 단위)*/
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.today {
+    font-size: 9px;
+    font-family: 'Gaegu', cursive;
+    /*
+        웹폰트의 font-family란 예비 폰트들을 지정해놓고, 첫 번째 폰트가 없으면 두 번째 폰트, 그것도 없으면 세 번째 폰트처럼 백업해서 사용했었음.
+        네트워크가 안좋아서 연결이 안돼거나 할 때 폰트가 다운로드 되지 않으면 글씨가 보이지 않는 브라우저도 있기 때문에 아직까지 이 기능이 사용되고 있음.
+    */
+}
+
+.wrapper__left__body {
+    width: 100%;
+    height: 100%;
+    border: 1px solid gray;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 20px 30px 0px 30px;
+}
+
+.left__body__header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.left__body__header__gray {
+    width: 148px;
+    height: 133px;
+    background-color: gray;
+}
+
+.left__body__header__line {
+    border-top: 1px dotted black;
+    margin: 12px 0px;       /* 첫 번째 : top, bottom, 두 번째 : left, right*/
+}
+
+.left__body__profile {
+    width: 148px;
+    display: flex;
+    flex-direction: column;
+}
+
+.left__body__profile__line {
+    width: 100%;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    font-size: 9px;
+}
+
+.profiletext {
+    margin-left: 8px;
+    color: #999999;
+}
+
+.left__body__footer {
+    width: 148px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin: 30px 0px;
+}
+
+.feeling {
+    font-size: 11px;
+    color: #999999;
+}
+
+.left__body__footer__select {
+    width: 148px;
+    margin-top: 5px;
+}
+
+.selectfeeling {
+    width: 100%;
+    height: 18px;
+    font-size: 15px;
+    color: #999999;
+}
+
+
+/*오른쪽 영역*/
+.wrapper__right {
+    width: 524px;
+    height: 472px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.wrapper__right__header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0px 15px;
+}
+
+.wrapper__right__body {
+    width: 510px;
+    height: 445px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.right__header__title, .right__header__setting {
+    color: #55b2e4;
+    font-size: 9px;
+}
+
+.right__header__title {
+    font-size: 16px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
