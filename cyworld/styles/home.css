@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 20px;      /* padding에 한 가지만 입력하면 전체 다 적용됨.*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wrapper__header {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contents__title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title {
+    color: #55B2E4;
+    font-size: 13px;
+    font-weight: 700;       /*font의 굵기를 설정*/
+}
+
+.subtitle {
+    font-size: 8px;
+    padding-left: 5px;
+}
+
+.divideLine {
+    width: 100%;
+    border-top: 1px solid gray;
+    margin: 5px 0px;
+}
+
+.contents__body {
+    font-size: 11px;
+    color: #999999;
+}
+
+.wrapper__body {
+    width: 100%;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.video__title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 0px 10px 0px;
+}
+
+.video__area {
+    width: 100%;
+    height: 240px;
+    background-color: gray;
+    margin-top: 8px;
+}
+
+
+video {         /*태그 자체에다가 줄 경우는 .을 붙이지 않고 바로 */
+    max-width: 100%;
+    height: 100%;
+    display: block;
+}
