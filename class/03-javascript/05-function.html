@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    
+    <script src="./05-function.js"></script>
+    <!--
+    <script>
+        function makeRandomNum() {
+            let num = String(Math.floor(Math.random() * 1000000)).padStart(6, "0")
+            document.getElementById("randomNum").innerText = num;
+        }
+    </script>
+    -->
+    <title>Document</title>
+</head>
+<body>
+    <span id="randomNum">000000</span>      <!-- 만약 div태그를 사용한다면 자동으로 한 줄 띄워져서 버튼은 아랫줄로 감. span의 경우 가로로 정렬됨 -->
+    <button onclick="makeRandomNum()">인증번호 전송</button>
+</body>
+</html>
